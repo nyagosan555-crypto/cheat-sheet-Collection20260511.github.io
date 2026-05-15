@@ -1,0 +1,46 @@
+{% extends 'public/base.html' %}
+{% block title %} index.html {% endblock %}
+{%block content %}
+<header class="der">
+    てすとテスト■
+</header>
+<table class="color-table">
+    <thead>
+        <tr>
+            <th colspan="4">フォントカラー</th>
+        </tr>
+        <tr>
+            <th>用途</th>
+            <th>和名</th>
+            <th>英名</th>
+            <th>カラーコード</th>
+        </tr>
+    </thead>
+    <tr>
+        <td>background-color(背景色)</td>
+        <td>明るめのグレー</td>
+        <td>Light gray</td>
+        <td style="background:var(--Lightgray);">#cacaca</td>
+    </tr>
+    <tr>
+        <td>color（文字色ベース）</td>
+        <td>チャコールグレー</td>
+        <td>charcoal gray</td>
+        <td style="background:var(--charcoalgray);">#333333</td>
+    </tr>
+    <tr>
+        <td>keyword（キーワード）</td>
+        <td>ディープネイビー</td>
+        <td>deepnavy</td>
+        <td style="background:var(--deepnavy);">#004488</td>
+    </tr>
+    <tr>
+        <td>comment（コメント）</td>
+        <td>セピアグレー</td>
+        <td>--sepiagray</td>
+        <td style="background:var(--sepiagray);">#555f61</td>
+    </tr>
+</table>
+ここはindexです。
+<a href="{{ url_for('public_info') }}">インフォページへ</a>
+{% endblock %}
