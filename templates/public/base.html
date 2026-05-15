@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>{% block title %} テスト中です。 {% endblock %}</title>
+</head>
+
+<body>
+    <header style="height: 60px; background-color: purple;"></header>
+    <a href="{{ url_for('public_index') }}">indexページへ</a>
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+    <footer style="height: 60px; background-color: purple;"></footer>
+</body>
+
+</html>
